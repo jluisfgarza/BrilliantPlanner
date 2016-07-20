@@ -1,5 +1,7 @@
 # Brilliant Planner
 
+[Website](https://brilliantplanner.github.io)
+
 An adaptive, web app for production planning 
 with user control.
 
@@ -16,3 +18,4 @@ with user control.
   - Production Status
   - Increase
   - Optimize Resources
+
