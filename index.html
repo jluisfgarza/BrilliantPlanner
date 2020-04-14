@@ -1,460 +1,763 @@
 <!DOCTYPE html>
-<html lang='en'>
-
-<head prefix='og: http://ogp.me/ns#'>
-    <meta charset='UTF-8'>
-    <meta content='width=device-width,user-scalable=no,initial-scale=1' name='viewport'>
+<html lang="en">
+  <head prefix="og: http://ogp.me/ns#">
+    <meta charset="UTF-8" />
+    <meta
+      content="width=device-width,user-scalable=no,initial-scale=1"
+      name="viewport"
+    />
     <script type="text/javascript">
-        window.NREUM || (NREUM = {});
-        NREUM.info = {
-            "beacon": "bam.nr-data.net",
-            "errorBeacon": "bam.nr-data.net",
-            "licenseKey": "f7d5b598d5",
-            "applicationID": "2746991",
-            "transactionName": "dVhcRUtcXF9VSk5YV1tSHVhXV1VL",
-            "queueTime": 7,
-            "applicationTime": 35,
-            "agent": ""
-        }
+      window.NREUM || (NREUM = {});
+      NREUM.info = {
+        beacon: "bam.nr-data.net",
+        errorBeacon: "bam.nr-data.net",
+        licenseKey: "f7d5b598d5",
+        applicationID: "2746991",
+        transactionName: "dVhcRUtcXF9VSk5YV1tSHVhXV1VL",
+        queueTime: 7,
+        applicationTime: 35,
+        agent: "",
+      };
     </script>
     <script type="text/javascript">
-        window.NREUM || (NREUM = {}), __nr_require = function(t, e, n) {
-            function r(n) {
-                if (!e[n]) {
-                    var o = e[n] = {
-                        exports: {}
-                    };
-                    t[n][0].call(o.exports, function(e) {
-                        var o = t[n][1][e];
-                        return r(o || e)
-                    }, o, o.exports)
-                }
-                return e[n].exports
+      window.NREUM || (NREUM = {}),
+        (__nr_require = (function (t, e, n) {
+          function r(n) {
+            if (!e[n]) {
+              var o = (e[n] = {
+                exports: {},
+              });
+              t[n][0].call(
+                o.exports,
+                function (e) {
+                  var o = t[n][1][e];
+                  return r(o || e);
+                },
+                o,
+                o.exports
+              );
             }
-            if ("function" == typeof __nr_require) return __nr_require;
-            for (var o = 0; o < n.length; o++) r(n[o]);
-            return r
-        }({
-            1: [function(t, e, n) {
+            return e[n].exports;
+          }
+          if ("function" == typeof __nr_require) return __nr_require;
+          for (var o = 0; o < n.length; o++) r(n[o]);
+          return r;
+        })(
+          {
+            1: [
+              function (t, e, n) {
                 function r() {}
                 function o(t, e, n) {
-                    return function() {
-                        return i(t, [(new Date).getTime()].concat(u(arguments)), e ? null : this, n), e ? void 0 : this
-                    }
+                  return function () {
+                    return (
+                      i(
+                        t,
+                        [new Date().getTime()].concat(u(arguments)),
+                        e ? null : this,
+                        n
+                      ),
+                      e ? void 0 : this
+                    );
+                  };
                 }
                 var i = t("handle"),
-                    a = t(2),
-                    u = t(3),
-                    c = t("ee").get("tracer"),
-                    f = NREUM;
+                  a = t(2),
+                  u = t(3),
+                  c = t("ee").get("tracer"),
+                  f = NREUM;
                 "undefined" == typeof window.newrelic && (newrelic = f);
-                var s = ["setPageViewName", "setCustomAttribute", "finished", "addToTrace", "inlineHit"],
-                    p = "api-",
-                    l = p + "ixn-";
-                a(s, function(t, e) {
-                    f[e] = o(p + e, !0, "api")
-                }), f.addPageAction = o(p + "addPageAction", !0), e.exports = newrelic, f.interaction = function() {
-                    return (new r).get()
-                };
-                var d = r.prototype = {
-                    createTracer: function(t, e) {
-                        var n = {},
-                            r = this,
-                            o = "function" == typeof e;
-                        return i(l + "tracer", [Date.now(), t, n], r),
-                            function() {
-                                if (c.emit((o ? "" : "no-") + "fn-start", [Date.now(), r, o], n), o) try {
-                                    return e.apply(this, arguments)
-                                } finally {
-                                    c.emit("fn-end", [Date.now()], n)
-                                }
-                            }
-                    }
-                };
-                a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","), function(t, e) {
-                    d[e] = o(l + e)
-                }), newrelic.noticeError = function(t) {
-                    "string" == typeof t && (t = new Error(t)), i("err", [t, (new Date).getTime()])
-                }
-            }, {}],
-            2: [function(t, e, n) {
+                var s = [
+                    "setPageViewName",
+                    "setCustomAttribute",
+                    "finished",
+                    "addToTrace",
+                    "inlineHit",
+                  ],
+                  p = "api-",
+                  l = p + "ixn-";
+                a(s, function (t, e) {
+                  f[e] = o(p + e, !0, "api");
+                }),
+                  (f.addPageAction = o(p + "addPageAction", !0)),
+                  (e.exports = newrelic),
+                  (f.interaction = function () {
+                    return new r().get();
+                  });
+                var d = (r.prototype = {
+                  createTracer: function (t, e) {
+                    var n = {},
+                      r = this,
+                      o = "function" == typeof e;
+                    return (
+                      i(l + "tracer", [Date.now(), t, n], r),
+                      function () {
+                        if (
+                          (c.emit(
+                            (o ? "" : "no-") + "fn-start",
+                            [Date.now(), r, o],
+                            n
+                          ),
+                          o)
+                        )
+                          try {
+                            return e.apply(this, arguments);
+                          } finally {
+                            c.emit("fn-end", [Date.now()], n);
+                          }
+                      }
+                    );
+                  },
+                });
+                a(
+                  "setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(
+                    ","
+                  ),
+                  function (t, e) {
+                    d[e] = o(l + e);
+                  }
+                ),
+                  (newrelic.noticeError = function (t) {
+                    "string" == typeof t && (t = new Error(t)),
+                      i("err", [t, new Date().getTime()]);
+                  });
+              },
+              {},
+            ],
+            2: [
+              function (t, e, n) {
                 function r(t, e) {
-                    var n = [],
-                        r = "",
-                        i = 0;
-                    for (r in t) o.call(t, r) && (n[i] = e(r, t[r]), i += 1);
-                    return n
+                  var n = [],
+                    r = "",
+                    i = 0;
+                  for (r in t) o.call(t, r) && ((n[i] = e(r, t[r])), (i += 1));
+                  return n;
                 }
                 var o = Object.prototype.hasOwnProperty;
-                e.exports = r
-            }, {}],
-            3: [function(t, e, n) {
+                e.exports = r;
+              },
+              {},
+            ],
+            3: [
+              function (t, e, n) {
                 function r(t, e, n) {
-                    e || (e = 0), "undefined" == typeof n && (n = t ? t.length : 0);
-                    for (var r = -1, o = n - e || 0, i = Array(o < 0 ? 0 : o); ++r < o;) i[r] = t[e + r];
-                    return i
+                  e || (e = 0),
+                    "undefined" == typeof n && (n = t ? t.length : 0);
+                  for (
+                    var r = -1, o = n - e || 0, i = Array(o < 0 ? 0 : o);
+                    ++r < o;
+
+                  )
+                    i[r] = t[e + r];
+                  return i;
                 }
-                e.exports = r
-            }, {}],
-            ee: [function(t, e, n) {
+                e.exports = r;
+              },
+              {},
+            ],
+            ee: [
+              function (t, e, n) {
                 function r() {}
                 function o(t) {
-                    function e(t) {
-                        return t && t instanceof r ? t : t ? u(t, a, i) : i()
-                    }
-                    function n(n, r, o) {
-                        t && t(n, r, o);
-                        for (var i = e(o), a = l(n), u = a.length, c = 0; c < u; c++) a[c].apply(i, r);
-                        var s = f[m[n]];
-                        return s && s.push([w, n, r, i]), i
-                    }
-                    function p(t, e) {
-                        g[t] = l(t).concat(e)
-                    }
-                    function l(t) {
-                        return g[t] || []
-                    }
-                    function d(t) {
-                        return s[t] = s[t] || o(n)
-                    }
-                    function v(t, e) {
-                        c(t, function(t, n) {
-                            e = e || "feature", m[n] = e, e in f || (f[e] = [])
-                        })
-                    }
-                    var g = {},
-                        m = {},
-                        w = {
-                            on: p,
-                            emit: n,
-                            get: d,
-                            listeners: l,
-                            context: e,
-                            buffer: v
-                        };
-                    return w
+                  function e(t) {
+                    return t && t instanceof r ? t : t ? u(t, a, i) : i();
+                  }
+                  function n(n, r, o) {
+                    t && t(n, r, o);
+                    for (
+                      var i = e(o), a = l(n), u = a.length, c = 0;
+                      c < u;
+                      c++
+                    )
+                      a[c].apply(i, r);
+                    var s = f[m[n]];
+                    return s && s.push([w, n, r, i]), i;
+                  }
+                  function p(t, e) {
+                    g[t] = l(t).concat(e);
+                  }
+                  function l(t) {
+                    return g[t] || [];
+                  }
+                  function d(t) {
+                    return (s[t] = s[t] || o(n));
+                  }
+                  function v(t, e) {
+                    c(t, function (t, n) {
+                      (e = e || "feature"), (m[n] = e), e in f || (f[e] = []);
+                    });
+                  }
+                  var g = {},
+                    m = {},
+                    w = {
+                      on: p,
+                      emit: n,
+                      get: d,
+                      listeners: l,
+                      context: e,
+                      buffer: v,
+                    };
+                  return w;
                 }
                 function i() {
-                    return new r
+                  return new r();
                 }
                 var a = "nr@context",
-                    u = t("gos"),
-                    c = t(2),
-                    f = {},
-                    s = {},
-                    p = e.exports = o();
-                p.backlog = f
-            }, {}],
-            gos: [function(t, e, n) {
+                  u = t("gos"),
+                  c = t(2),
+                  f = {},
+                  s = {},
+                  p = (e.exports = o());
+                p.backlog = f;
+              },
+              {},
+            ],
+            gos: [
+              function (t, e, n) {
                 function r(t, e, n) {
-                    if (o.call(t, e)) return t[e];
-                    var r = n();
-                    if (Object.defineProperty && Object.keys) try {
-                        return Object.defineProperty(t, e, {
-                            value: r,
-                            writable: !0,
-                            enumerable: !1
-                        }), r
+                  if (o.call(t, e)) return t[e];
+                  var r = n();
+                  if (Object.defineProperty && Object.keys)
+                    try {
+                      return (
+                        Object.defineProperty(t, e, {
+                          value: r,
+                          writable: !0,
+                          enumerable: !1,
+                        }),
+                        r
+                      );
                     } catch (i) {}
-                    return t[e] = r, r
+                  return (t[e] = r), r;
                 }
                 var o = Object.prototype.hasOwnProperty;
-                e.exports = r
-            }, {}],
-            handle: [function(t, e, n) {
+                e.exports = r;
+              },
+              {},
+            ],
+            handle: [
+              function (t, e, n) {
                 function r(t, e, n, r) {
-                    o.buffer([t], r), o.emit(t, e, n)
+                  o.buffer([t], r), o.emit(t, e, n);
                 }
                 var o = t("ee").get("handle");
-                e.exports = r, r.ee = o
-            }, {}],
-            id: [function(t, e, n) {
+                (e.exports = r), (r.ee = o);
+              },
+              {},
+            ],
+            id: [
+              function (t, e, n) {
                 function r(t) {
-                    var e = typeof t;
-                    return !t || "object" !== e && "function" !== e ? -1 : t === window ? 0 : a(t, i, function() {
-                        return o++
-                    })
+                  var e = typeof t;
+                  return !t || ("object" !== e && "function" !== e)
+                    ? -1
+                    : t === window
+                    ? 0
+                    : a(t, i, function () {
+                        return o++;
+                      });
                 }
                 var o = 1,
-                    i = "nr@id",
-                    a = t("gos");
-                e.exports = r
-            }, {}],
-            loader: [function(t, e, n) {
+                  i = "nr@id",
+                  a = t("gos");
+                e.exports = r;
+              },
+              {},
+            ],
+            loader: [
+              function (t, e, n) {
                 function r() {
-                    if (!h++) {
-                        var t = y.info = NREUM.info,
-                            e = s.getElementsByTagName("script")[0];
-                        if (t && t.licenseKey && t.applicationID && e) {
-                            c(m, function(e, n) {
-                                t[e] || (t[e] = n)
-                            });
-                            var n = "https" === g.split(":")[0] || t.sslForHttp;
-                            y.proto = n ? "https://" : "http://", u("mark", ["onload", a()], null, "api");
-                            var r = s.createElement("script");
-                            r.src = y.proto + t.agent, e.parentNode.insertBefore(r, e)
-                        }
+                  if (!h++) {
+                    var t = (y.info = NREUM.info),
+                      e = s.getElementsByTagName("script")[0];
+                    if (t && t.licenseKey && t.applicationID && e) {
+                      c(m, function (e, n) {
+                        t[e] || (t[e] = n);
+                      });
+                      var n = "https" === g.split(":")[0] || t.sslForHttp;
+                      (y.proto = n ? "https://" : "http://"),
+                        u("mark", ["onload", a()], null, "api");
+                      var r = s.createElement("script");
+                      (r.src = y.proto + t.agent),
+                        e.parentNode.insertBefore(r, e);
                     }
+                  }
                 }
                 function o() {
-                    "complete" === s.readyState && i()
+                  "complete" === s.readyState && i();
                 }
                 function i() {
-                    u("mark", ["domContent", a()], null, "api")
+                  u("mark", ["domContent", a()], null, "api");
                 }
                 function a() {
-                    return (new Date).getTime()
+                  return new Date().getTime();
                 }
                 var u = t("handle"),
-                    c = t(2),
-                    f = window,
-                    s = f.document,
-                    p = "addEventListener",
-                    l = "attachEvent",
-                    d = f.XMLHttpRequest,
-                    v = d && d.prototype;
-                NREUM.o = {
-                    ST: setTimeout,
-                    CT: clearTimeout,
-                    XHR: d,
-                    REQ: f.Request,
-                    EV: f.Event,
-                    PR: f.Promise,
-                    MO: f.MutationObserver
-                }, t(1);
+                  c = t(2),
+                  f = window,
+                  s = f.document,
+                  p = "addEventListener",
+                  l = "attachEvent",
+                  d = f.XMLHttpRequest,
+                  v = d && d.prototype;
+                (NREUM.o = {
+                  ST: setTimeout,
+                  CT: clearTimeout,
+                  XHR: d,
+                  REQ: f.Request,
+                  EV: f.Event,
+                  PR: f.Promise,
+                  MO: f.MutationObserver,
+                }),
+                  t(1);
                 var g = "" + location,
-                    m = {
-                        beacon: "bam.nr-data.net",
-                        errorBeacon: "bam.nr-data.net",
-                        agent: "js-agent.newrelic.com/nr-963.min.js"
-                    },
-                    w = d && v && v[p] && !/CriOS/.test(navigator.userAgent),
-                    y = e.exports = {
-                        offset: a(),
-                        origin: g,
-                        features: {},
-                        xhrWrappable: w
-                    };
-                s[p] ? (s[p]("DOMContentLoaded", i, !1), f[p]("load", r, !1)) : (s[l]("onreadystatechange", o), f[l]("onload", r)), u("mark", ["firstbyte", a()], null, "api");
-                var h = 0
-            }, {}]
-        }, {}, ["loader"]);
+                  m = {
+                    beacon: "bam.nr-data.net",
+                    errorBeacon: "bam.nr-data.net",
+                    agent: "js-agent.newrelic.com/nr-963.min.js",
+                  },
+                  w = d && v && v[p] && !/CriOS/.test(navigator.userAgent),
+                  y = (e.exports = {
+                    offset: a(),
+                    origin: g,
+                    features: {},
+                    xhrWrappable: w,
+                  });
+                s[p]
+                  ? (s[p]("DOMContentLoaded", i, !1), f[p]("load", r, !1))
+                  : (s[l]("onreadystatechange", o), f[l]("onload", r)),
+                  u("mark", ["firstbyte", a()], null, "api");
+                var h = 0;
+              },
+              {},
+            ],
+          },
+          {},
+          ["loader"]
+        ));
     </script>
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <link href="assets/marketing/marketing-1eb895674403993dac41fd6c1a229acc.css" media="all" rel="stylesheet" />
+    <link
+      href="assets/marketing/marketing-1eb895674403993dac41fd6c1a229acc.css"
+      media="all"
+      rel="stylesheet"
+    />
     <title>Production Planner</title>
     <script src="assets/marketing/modernizr.custom-f3a0ab750a0f9a4f2441e5d622e914de.js"></script>
     <script>
-    //<![CDATA[
-    function udm_(a) {
-        var
-            b = "comScore=",
-            c = document,
-            d = c.cookie,
-            e = "",
-            f = "indexOf",
-            g = "substring",
-            h = "length",
-            i = 2048,
-            j, k = "&ns_",
-            l = "&",
-            m, n, o, p, q = window,
-            r = q.encodeURIComponent || escape;
+      //<![CDATA[
+      function udm_(a) {
+        var b = "comScore=",
+          c = document,
+          d = c.cookie,
+          e = "",
+          f = "indexOf",
+          g = "substring",
+          h = "length",
+          i = 2048,
+          j,
+          k = "&ns_",
+          l = "&",
+          m,
+          n,
+          o,
+          p,
+          q = window,
+          r = q.encodeURIComponent || escape;
         if (d[f](b) + 1)
-            for (o = 0, n = d.split(";"), p = n[h]; o < p; o++) m = n[o][f](b), m + 1 && (e = l + unescape(n[o][g](m + b[h])));
-        a += k + "_t=" + +(new Date) + k + "c=" + (c.characterSet || c.defaultCharset || "") + "&c8=" + r(c.title) + e + "&c7=" +
-            r(c.URL) + "&c9=" + r(c.referrer), a[h] > i && a[f](l) > 0 && (j = a[g](0, i - 8).lastIndexOf(l), a = (a[g](0, j) + k + "cut=" + r(a[g](j + 1)))[g](0, i)), c.images ? (m = new Image, q.ns_p || (ns_p = m), m.src = a) : c.write("<", "p", "><", 'img src="', a,
-                '"height="1" width="1" alt="*"', "><", "/p", ">")
-    }
-    udm_('https://sb.scorecardresearch.com/p?c1=2&c2=14990625&application_id=134034&name=134034.foliotouch.content&ns_site=cmf-fmc&content1=richinteractivemedia&class1=experimental.english&class2=website');
-    //]]>
-    </script><noscript>
-
-    <p><img alt="*" height="1" src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=14990625" width="1" /></p>
+          for (o = 0, n = d.split(";"), p = n[h]; o < p; o++)
+            (m = n[o][f](b)), m + 1 && (e = l + unescape(n[o][g](m + b[h])));
+        (a +=
+          k +
+          "_t=" +
+          +new Date() +
+          k +
+          "c=" +
+          (c.characterSet || c.defaultCharset || "") +
+          "&c8=" +
+          r(c.title) +
+          e +
+          "&c7=" +
+          r(c.URL) +
+          "&c9=" +
+          r(c.referrer)),
+          a[h] > i &&
+            a[f](l) > 0 &&
+            ((j = a[g](0, i - 8).lastIndexOf(l)),
+            (a = (a[g](0, j) + k + "cut=" + r(a[g](j + 1)))[g](0, i))),
+          c.images
+            ? ((m = new Image()), q.ns_p || (ns_p = m), (m.src = a))
+            : c.write(
+                "<",
+                "p",
+                "><",
+                'img src="',
+                a,
+                '"height="1" width="1" alt="*"',
+                "><",
+                "/p",
+                ">"
+              );
+      }
+      udm_(
+        "https://sb.scorecardresearch.com/p?c1=2&c2=14990625&application_id=134034&name=134034.foliotouch.content&ns_site=cmf-fmc&content1=richinteractivemedia&class1=experimental.english&class2=website"
+      );
+      //]]>
+    </script>
+    <noscript>
+      <p>
+        <img
+          alt="*"
+          height="1"
+          src="https://sb.scorecardresearch.com/p?c1=2&amp;c2=14990625"
+          width="1"
+        />
+      </p>
     </noscript>
     <script>
-        document.addEventListener("touchstart", function() {}, false);
+      document.addEventListener("touchstart", function () {}, false);
     </script>
-    <link rel="stylesheet" href="assets/marketing/font-awesome/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="assets/marketing/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
 
-</head>
-
-<body class='home-index'>
-
-    <section class='intro'>
-        <div class='blurred-bg'></div>
-        <div class='overlay'></div>
-        <div class='section-content'>
-            <div class='left-content'>
-                <img alt="Header logo" class="logo" src="assets/header_logo-b62bdc45315c4c57ec75c120b69752be.png" />
-                <h1><strong>Brilliant Planner</strong><br>Realtime Information.<br>Big Data Analysis.</h1>
-                <h3>An <strong>adaptive</strong>, web app for production planning <br>with user control.</h3>
-                <a class="btn-download js-app-store" href=""><img alt="Download button icon" src="assets/marketing/download-button-icon-82f8f4b2fb1113ff290ac9ce7b3fbca6.png" /> Web, Tablet & Phone Ready
-                </a>
-            </div>
-            <img alt="Ipad intro back" class="ipad-intro-right" src="assets/marketing/ipad-intro-back-12c0520413fbfeb81528602b46765caf.png" />
-            <div class='ipad-intro-left'>
-                
-            </div>
-            <div class='ipad-mobile'>
-                <img alt="Ipad mobile" class="intro-ipad-mobile" src="assets/marketing/ipad-mobile-bc522e42392318efb7cfc30e2f37edca.png" />
-            </div>
+  <body class="home-index">
+    <section class="intro">
+      <div class="blurred-bg"></div>
+      <div class="overlay"></div>
+      <div class="section-content">
+        <div class="left-content">
+          <img alt="Header logo" class="logo" src="assets/header_logo.png" />
+          <h1>
+            <strong>Brilliant Planner</strong><br />Realtime Information.<br />Big
+            Data Analysis.
+          </h1>
+          <h3>
+            An <strong>adaptive</strong>, web app for production planning
+            <br />with user control.
+          </h3>
+          <a class="btn-download js-app-store" href=""
+            ><img
+              alt="Download button icon"
+              src="assets/marketing/download-button-icon-82f8f4b2fb1113ff290ac9ce7b3fbca6.png"
+            />
+            Web, Tablet & Phone Ready
+          </a>
         </div>
+        <img
+          alt="Ipad intro back"
+          class="ipad-intro-right"
+          src="assets/marketing/ipad-intro-back-12c0520413fbfeb81528602b46765caf.png"
+        />
+        <div class="ipad-intro-left"></div>
+        <div class="ipad-mobile">
+          <img
+            alt="Ipad mobile"
+            class="intro-ipad-mobile"
+            src="assets/marketing/ipad-mobile-bc522e42392318efb7cfc30e2f37edca.png"
+          />
+        </div>
+      </div>
     </section>
 
-    <section class='discover'>
-        <div class='section-content'>
-            <h2>Brilliant Planner</h2>
-            <h3>Responsive design. Personalized validation system.<br>Enhanced user experience </h3>
-            <div class='ipads'>
-                <img alt="Ipad left" class="ipad-left" src="assets/marketing/ipad-left-8359dbc3c01b2b98005c22aa74cb44f1.png" />
-                <img alt="Ipad right" class="ipad-right" src="assets/marketing/ipad-right-ad1d715c1d22315f5864d97c0b917356.png" />
-                <img alt="Ipad center" class="ipad-center" src="assets/marketing/ipad-center-5f93e4b4fc9f7cec888703bede3da2b3.png" />
-            </div><br><br><br><br><br>
-            <h2>Focus on what's important.<br></h2>
-            <h3>Automatic reports & Big Data Analysis</h3>
+    <section class="discover">
+      <div class="section-content">
+        <h2>Brilliant Planner</h2>
+        <h3>
+          Responsive design. Personalized validation system.<br />Enhanced user
+          experience
+        </h3>
+        <div class="ipads">
+          <img
+            alt="Ipad left"
+            class="ipad-left"
+            src="assets/marketing/ipad-left-8359dbc3c01b2b98005c22aa74cb44f1.png"
+          />
+          <img
+            alt="Ipad right"
+            class="ipad-right"
+            src="assets/marketing/ipad-right-ad1d715c1d22315f5864d97c0b917356.png"
+          />
+          <img
+            alt="Ipad center"
+            class="ipad-center"
+            src="assets/marketing/ipad-center-5f93e4b4fc9f7cec888703bede3da2b3.png"
+          />
         </div>
+        <br /><br /><br /><br /><br />
+        <h2>Focus on what's important.<br /></h2>
+        <h3>Automatic reports & Big Data Analysis</h3>
+      </div>
     </section>
 
-    <div class='section-divider'>
-        <img alt="Discover" src="assets/marketing/section-dividers/discover-f79b2b5a11f4383317aae0281d610573.jpg" />
+    <div class="section-divider">
+      <img
+        alt="Discover"
+        src="assets/marketing/section-dividers/discover-f79b2b5a11f4383317aae0281d610573.jpg"
+      />
     </div>
 
-    <section class='customize'>
-        <div class='section-content'>
-            <div class='left-content'>
-                <h2>Realtime information</h2>
-                <h3> Track products from the start through<br> the eDHR* system. With <strong>ANDON</strong><br> integration to identify abnormalities in <br> the process.</h3>
-                <br><br><br><br><br><h5>*eDHR: Electronic Device History Record</h5>
-            </div>
-            <div class='ipads'>
-                <img alt="Ipad customize 1" class="ipad-1" src="assets/marketing/ipad-customize-1-5e4559444c6d7d7cb0b0c032e9a6a59a.png" />
-                <img alt="Ipad customize 2" class="ipad-2" src="assets/marketing/ipad-customize-2-4bfb5d7f60a9cbfa1a12f52463be137b.png" />
-            </div>
+    <section class="customize">
+      <div class="section-content">
+        <div class="left-content">
+          <h2>Realtime information</h2>
+          <h3>
+            Track products from the start through<br />
+            the eDHR* system. With <strong>ANDON</strong><br />
+            integration to identify abnormalities in <br />
+            the process.
+          </h3>
+          <br /><br /><br /><br /><br />
+          <h5>*eDHR: Electronic Device History Record</h5>
         </div>
+        <div class="ipads">
+          <img
+            alt="Ipad customize 1"
+            class="ipad-1"
+            src="assets/marketing/ipad-customize-1-5e4559444c6d7d7cb0b0c032e9a6a59a.png"
+          />
+          <img
+            alt="Ipad customize 2"
+            class="ipad-2"
+            src="assets/marketing/ipad-customize-2-4bfb5d7f60a9cbfa1a12f52463be137b.png"
+          />
+        </div>
+      </div>
     </section>
 
-    <div class='section-divider'>
-        <img alt="Share" src="assets/marketing/section-dividers/share-7006b33a93b256612ea04c48b4591c2a.jpg" />
+    <div class="section-divider">
+      <img
+        alt="Share"
+        src="assets/marketing/section-dividers/share-7006b33a93b256612ea04c48b4591c2a.jpg"
+      />
     </div>
 
-    <section class='present'>
-        <div class='present-inner'>
-            <div class='section-content'>
-                <div class="right-content">
-                    <h2>Automatic Alerts</h2>
-                    <h3>Notification Updates.</h3>
-                </div>
-            </div>
-            <div class='devices'>
-                <img alt="Teevee" class="present-tv" src="assets/marketing/teevee-b4f1ee1e495063f2b8a39f51efe71593.png" />
-                <img alt="Ipad present" class="ipad-present" src="assets/marketing/ipad-present-ad8eb7ab1e011a883a05a39fb93b8675.png" />
-            </div>
+    <section class="present">
+      <div class="present-inner">
+        <div class="section-content">
+          <div class="right-content">
+            <h2>Automatic Alerts</h2>
+            <h3>Notification Updates.</h3>
+          </div>
         </div>
+        <div class="devices">
+          <img
+            alt="Teevee"
+            class="present-tv"
+            src="assets/marketing/teevee-b4f1ee1e495063f2b8a39f51efe71593.png"
+          />
+          <img
+            alt="Ipad present"
+            class="ipad-present"
+            src="assets/marketing/ipad-present-ad8eb7ab1e011a883a05a39fb93b8675.png"
+          />
+        </div>
+      </div>
     </section>
 
-    <div class='section-divider'>
-        <br><br>
-        <img alt="Present" src="assets/marketing/section-dividers/present-d22e705ecd666a72cd7bfb1facbc2af7.jpg" />
+    <div class="section-divider">
+      <br /><br />
+      <img
+        alt="Present"
+        src="assets/marketing/section-dividers/present-d22e705ecd666a72cd7bfb1facbc2af7.jpg"
+      />
     </div>
 
-    <section class='share'>
-        <div class='section-content'>
-            <h2> History Records of previous plans</h2>
-            <h3>Day summaries and shift reports.</h3>
-            <div class='device'>
-                <img alt="Share mba" class="mba light" src="assets/marketing/share-mba-75201a7aaaa8ead9664fb0a7bfe2138b.png" />
-                <!--<img alt="Share mba dark" class="mba dark" src="assets/marketing/share-mba-dark-35b10ad7c229ab2d8f29c4080df24128.png" />-->
-
-            </div>
-            <br><br><h2> Just, <strong>Brilliant</strong></h2>
+    <section class="share">
+      <div class="section-content">
+        <h2>History Records of previous plans</h2>
+        <h3>Day summaries and shift reports.</h3>
+        <div class="device">
+          <img
+            alt="Share mba"
+            class="mba light"
+            src="assets/marketing/share-mba-75201a7aaaa8ead9664fb0a7bfe2138b.png"
+          />
+          <!--<img alt="Share mba dark" class="mba dark" src="assets/marketing/share-mba-dark-35b10ad7c229ab2d8f29c4080df24128.png" />-->
         </div>
+        <br /><br />
+        <h2>Just, <strong>Brilliant</strong></h2>
+      </div>
     </section>
 
-    <section class='features'>
-        <div class='section-content'>
-            <div class='feature'>
-                <h4><i class="fa fa-clock-o" aria-hidden="true"></i> Real Time Information</h4>
-                <div class='feature-description'>Fed by eDHR which allows tracking the production through all the process.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-cogs" aria-hidden="true"></i> Big Data Analysis</h4>
-                <div class='feature-description'>Automatic reports generated for every shift as well as daily production summaries.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-refresh" aria-hidden="true"></i> Adaptability</h4>
-                <div class='feature-description'>Define your own variables. (for production planning) Easy updates that adequate the platform  to the production's needs.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-times" aria-hidden="true"></i> Mistake Proofing (pokayoke)</h4>
-                <div class='feature-description'>Anyone can do it. Defines locks allow validated routes. </div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-history" aria-hidden="true"></i> History Record</h4>
-                <div class='feature-description'>Information of previous plans available for consulting.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class='ss-icon ss-lock'></i>Update Validation</h4>
-                <div class='feature-description'>Notify users as soon as an update is made or the occurrence of an abnormality in the process.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class='ss-icon ss-desktop'></i>Information Management</h4>
-                <div class='feature-description'>Everything about your production process in one place.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-codepen" aria-hidden="true"></i> Digitalization of Process</h4>
-                <div class='feature-description'>Information available to users milliseconds after being published.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-universal-access" aria-hidden="true"></i> Accessibility</h4>
-                <div class='feature-description'>Multi-interface access. View, update or plan from your desktop, tablet or phone.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-tachometer" aria-hidden="true"></i> Production Status</h4>
-                <div class='feature-description'>You can compare your plan to the actual production status during the process.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-signal" aria-hidden="true"></i> Increase</h4>
-                <div class='feature-description'>Reduce time taken to gather information, plan and analyze data.</div>
-            </div>
-            <div class='feature'>
-                <h4><i class="fa fa-bar-chart" aria-hidden="true"></i> Optimize Resources</h4>
-                <div class='feature-description'>Speeds up the identification of opportunity areas. Focus human capital to other areas that require more attention.</div>
-            </div>
+    <section class="features">
+      <div class="section-content">
+        <div class="feature">
+          <h4>
+            <i class="fa fa-clock-o" aria-hidden="true"></i> Real Time
+            Information
+          </h4>
+          <div class="feature-description">
+            Fed by eDHR which allows tracking the production through all the
+            process.
+          </div>
         </div>
+        <div class="feature">
+          <h4>
+            <i class="fa fa-cogs" aria-hidden="true"></i> Big Data Analysis
+          </h4>
+          <div class="feature-description">
+            Automatic reports generated for every shift as well as daily
+            production summaries.
+          </div>
+        </div>
+        <div class="feature">
+          <h4><i class="fa fa-refresh" aria-hidden="true"></i> Adaptability</h4>
+          <div class="feature-description">
+            Define your own variables. (for production planning) Easy updates
+            that adequate the platform to the production's needs.
+          </div>
+        </div>
+        <div class="feature">
+          <h4>
+            <i class="fa fa-times" aria-hidden="true"></i> Mistake Proofing
+            (pokayoke)
+          </h4>
+          <div class="feature-description">
+            Anyone can do it. Defines locks allow validated routes.
+          </div>
+        </div>
+        <div class="feature">
+          <h4>
+            <i class="fa fa-history" aria-hidden="true"></i> History Record
+          </h4>
+          <div class="feature-description">
+            Information of previous plans available for consulting.
+          </div>
+        </div>
+        <div class="feature">
+          <h4><i class="ss-icon ss-lock"></i>Update Validation</h4>
+          <div class="feature-description">
+            Notify users as soon as an update is made or the occurrence of an
+            abnormality in the process.
+          </div>
+        </div>
+        <div class="feature">
+          <h4><i class="ss-icon ss-desktop"></i>Information Management</h4>
+          <div class="feature-description">
+            Everything about your production process in one place.
+          </div>
+        </div>
+        <div class="feature">
+          <h4>
+            <i class="fa fa-codepen" aria-hidden="true"></i> Digitalization of
+            Process
+          </h4>
+          <div class="feature-description">
+            Information available to users milliseconds after being published.
+          </div>
+        </div>
+        <div class="feature">
+          <h4>
+            <i class="fa fa-universal-access" aria-hidden="true"></i>
+            Accessibility
+          </h4>
+          <div class="feature-description">
+            Multi-interface access. View, update or plan from your desktop,
+            tablet or phone.
+          </div>
+        </div>
+        <div class="feature">
+          <h4>
+            <i class="fa fa-tachometer" aria-hidden="true"></i> Production
+            Status
+          </h4>
+          <div class="feature-description">
+            You can compare your plan to the actual production status during the
+            process.
+          </div>
+        </div>
+        <div class="feature">
+          <h4><i class="fa fa-signal" aria-hidden="true"></i> Increase</h4>
+          <div class="feature-description">
+            Reduce time taken to gather information, plan and analyze data.
+          </div>
+        </div>
+        <div class="feature">
+          <h4>
+            <i class="fa fa-bar-chart" aria-hidden="true"></i> Optimize
+            Resources
+          </h4>
+          <div class="feature-description">
+            Speeds up the identification of opportunity areas. Focus human
+            capital to other areas that require more attention.
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class='download'>
-        <div class='section-content'>
-            <img alt="Download icon.en" class="download-icon" src="assets/marketing/download-icon.en-778ad40b785d3757166b8cc5f11ffa4c.png" style="max-width:300px; height: auto;" />
-            <br><h2>Made by <strong>GE Healthcare</strong> Interns</h2>
-        </div>
+    <section class="download">
+      <div class="section-content">
+        <img
+          alt="Download icon.en"
+          class="download-icon"
+          src="assets/marketing/download-icon.en-778ad40b785d3757166b8cc5f11ffa4c.png"
+          style="max-width: 300px; height: auto;"
+        />
+        <br />
+        <h2>Made by <strong>GE Healthcare</strong> Interns</h2>
+      </div>
     </section>
 
-    <section class='about-format'>
-        <div class='about-format-overlay'></div>
-        <div class='about-format-inner'>
-            <div class='about-format-left'>
-                <h4 class='provided-by'>Developers' Profiles:</h4>
+    <section class="about-format">
+      <div class="about-format-overlay"></div>
+      <div class="about-format-inner">
+        <div class="about-format-left">
+          <h4 class="provided-by">Developers' Profiles:</h4>
 
-                <a href="https://mx.linkedin.com/in/jluisfgarza" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>  Juan Luis Flores</a><br>
+          <a href="https://mx.linkedin.com/in/jluisfgarza" target="_blank"
+            ><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i> Juan
+            Luis Flores</a
+          ><br />
 
-                <br><a href="https://mx.linkedin.com/in/cristina-jiménez-05b719107/en" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i> Cristina Jimenez</a><br>
+          <br /><a
+            href="https://mx.linkedin.com/in/cristina-jiménez-05b719107/en"
+            target="_blank"
+            ><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>
+            Cristina Jimenez</a
+          ><br />
 
-                <br><a href="your link here"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" target="_blank"></i> Abraham García</a><br>
+          <br /><a href="your link here"
+            ><i
+              class="fa fa-linkedin-square fa-lg"
+              aria-hidden="true"
+              target="_blank"
+            ></i>
+            Abraham García</a
+          ><br />
 
-                <br><a href="https://mx.linkedin.com/in/nathanael-aguilar-7b33854a/en" target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true" target="_blank"></i><strong> Mentor: </strong>Nathanael Aguilar</a><br>
+          <br /><a
+            href="https://mx.linkedin.com/in/nathanael-aguilar-7b33854a/en"
+            target="_blank"
+            ><i
+              class="fa fa-linkedin-square fa-lg"
+              aria-hidden="true"
+              target="_blank"
+            ></i
+            ><strong> Mentor: </strong>Nathanael Aguilar</a
+          ><br />
 
-                <p class='format-link-wrap'>
-                    <a class='format-link' href='http://www3.gehealthcare.com.mx/' target="_blank"> GE Healthcare</a>
-                </p>
-            </div>
-            <div class='about-format-right'>
-                <br><br>
-                <img alt="Format theme" class="format-theme" src="assets/marketing/format-theme-e26e07abd36a73a8a3de1fd3c598d4d7.png" />
-            </div>
-            <div class='cf'></div>
+          <p class="format-link-wrap">
+            <a
+              class="format-link"
+              href="http://www3.gehealthcare.com.mx/"
+              target="_blank"
+            >
+              GE Healthcare</a
+            >
+          </p>
         </div>
+        <div class="about-format-right">
+          <br /><br />
+          <img
+            alt="Format theme"
+            class="format-theme"
+            src="assets/marketing/format-theme-e26e07abd36a73a8a3de1fd3c598d4d7.png"
+          />
+        </div>
+        <div class="cf"></div>
+      </div>
     </section>
 
     <!--
@@ -491,6 +794,5 @@
     </footer>
     -->
     <script src="/assets/marketing/marketing-ee0fefce482c1917f3d8a666d12689e0.js"></script>
-</body>
-
+  </body>
 </html>
