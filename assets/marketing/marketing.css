@@ -194,62 +194,6 @@ table {
   border-spacing: 0
 }
 
-@font-face {
-  font-family: 'Galaxie Polaris';
-  src: url(/fonts/galaxiepolaris-book.eot?) format("eot"), url(/assets/galaxiepolaris-book.woff) format("woff"), url(/assets/galaxiepolaris-book.ttf) format("truetype");
-  font-weight: 400;
-  font-style: normal
-}
-
-@font-face {
-  font-family: 'Galaxie Polaris';
-  src: url(/fonts/galaxiepolaris-light.eot?) format("eot"), url(/assets/galaxiepolaris-light.woff) format("woff"), url(/assets/galaxiepolaris-light.ttf) format("truetype");
-  font-weight: 300;
-  font-style: normal
-}
-
-@font-face {
-  font-family: 'Galaxie Polaris';
-  src: url(/fonts/galaxiepolaris-medium.eot?) format("eot"), url(/assets/galaxiepolaris-medium.woff) format("woff"), url(/assets/galaxiepolaris-medium.ttf) format("truetype");
-  font-weight: 500;
-  font-style: normal
-}
-
-@font-face {
-  font-family: 'Galaxie Polaris';
-  src: url(/fonts/galaxiepolaris-bold.eot?) format("eot"), url(/assets/galaxiepolaris-bold.woff) format("woff"), url(/assets/galaxiepolaris-bold.ttf) format("truetype");
-  font-weight: 600;
-  font-style: normal
-}
-
-@font-face {
-  font-family: 'Galaxie Polaris';
-  src: url(/fonts/galaxiepolaris-bookitalic.eot?) format("eot"), url(/assets/galaxiepolaris-bookitalic-4e772e5595f5216b8f80cf0f77a930fc.woff) format("woff"), url(/assets/galaxiepolaris-bookitalic-2b245d2a0c5a0e71e94d0428bfada0fb.ttf) format("truetype");
-  font-weight: 400;
-  font-style: italic
-}
-
-@font-face {
-  font-family: 'Galaxie Polaris';
-  src: url(/fonts/galaxiepolaris-mediumitalic.eot?) format("eot"), url(/assets/galaxiepolaris-mediumitalic-8c66fd95f1fac2552e948344dff3c4a3.woff) format("woff"), url(/assets/galaxiepolaris-mediumitalic-7578f4647d83c45e8323460bf75b33f7.ttf) format("truetype");
-  font-weight: 500;
-  font-style: italic
-}
-
-@font-face {
-  font-family: 'Galaxie Polaris';
-  src: url(/fonts/galaxiepolaris-bolditalic.eot?) format("eot"), url(/assets/galaxiepolaris-bolditalic-cbaf217fa0e70532d1da82c501a6e657.woff) format("woff"), url(/assets/galaxiepolaris-bolditalic-d6b544f6c4317c1df379061a9fc0a76c.ttf) format("truetype");
-  font-weight: 600;
-  font-style: italic
-}
-
-@font-face {
-  font-family: 'Galaxie Polaris';
-  src: url(/fonts/galaxiepolaris-HeavyItalic.eot?) format("eot"), url(/fonts/galaxiepolaris-HeavyItalic.woff) format("woff"), url(/fonts/galaxiepolaris-HeavyItalic.ttf) format("truetype");
-  font-weight: 800;
-  font-style: italic
-}
-
 .btn-download {
   display: inline-block;
   vertical-align: baseline;
@@ -816,7 +760,7 @@ footer.footer .section-content .copyright {
 }
 
 section .blurred-bg {
-  background: url(assets/marketing/bg.jpg);
+  background: url("/assets/marketing/bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -1019,7 +963,7 @@ section.intro .ipad-intro-left {
   -ms-transform: scale(0.75) translate3d(0, -21%, 0);
   -o-transform: scale(0.75) translate3d(0, -21%, 0);
   transform: scale(0.75) translate3d(0, -21%, 0);
-  background: url(/assets/marketing/ipad-intro-front.png);
+  background: url("/assets/marketing/ipad-intro-front.png");
   background-repeat: no-repeat;
   background-size: 712px 892px;
   opacity: 0;
@@ -1136,7 +1080,7 @@ section.intro .ipad-intro-left .screen .portfolio {
   transition: opacity 500ms ease-out;
   width: 100%;
   height: 100%;
-  background: url(/assets/marketing/intro-animation/02-portfolios.jpg);
+  background: url("/assets/marketing/intro-animation/02-portfolios.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center 0;
@@ -2839,14 +2783,6 @@ section.download .download-badge {
 
 .holder a.jp-current {
   font-weight: 600
-}
-
-@font-face {
-  font-family: "SSStandard";
-  src: url(/assets/ss-standard-v2/ss-standard.eot);
-  src: url(/assets/ss-standard-v2/ss-standard.eot?#iefix) format("embedded-opentype"), url(assets/ss-standard-v2/ss-standard.woff) format("woff"), url(/assets/ss-standard-v2/ss-standard.ttf) format("truetype"), url(/assets/ss-standard-v2/ss-standard.svg#SSStandard) format("svg");
-  font-weight: normal;
-  font-style: normal
 }
 
 html:hover [class^="ss-"] {
