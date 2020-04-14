@@ -816,7 +816,7 @@ footer.footer .section-content .copyright {
 }
 
 section .blurred-bg {
-  background: url(/assets/marketing/bg.jpg);
+  background: url(assets/marketing/bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -2729,7 +2729,7 @@ section.download .download-badge {
 }
 
 .guidelines-sub .image-wrap .download {
-  background: url(/assets/marketing/icon-download-23b063e8ba2dfd23e9ae7f10687ecd54.png) 0 0 no-repeat;
+  background: marketing/icon-download-23b063e8ba2dfd23e9ae7f10687ecd54.png) 0 0 no-repeat;
   background-size: 100%;
   display: block;
   height: 30px;
